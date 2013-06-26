@@ -87,7 +87,7 @@ class _LDAPConfig(object):
                 def emit(self, record):
                     pass
 
-            cls.logger = logging.getLogger('django_auth_ldap')
+            cls.logger = logging.getLogger('django')
             cls.logger.addHandler(NullHandler())
 
         return cls.logger
